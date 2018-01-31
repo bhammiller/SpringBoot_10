@@ -7,7 +7,7 @@
 <body>
 <form action="#"
       th:action="@{/process}"
-      th:action="${course}"
+      th:object="${course}"
       method="post">
     <input type="hidden" th:field="*{id}" />
     Title :<input type="text" th:field="*{title}" />
